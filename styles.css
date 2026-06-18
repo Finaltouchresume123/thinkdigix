@@ -61,8 +61,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .hcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:.4s}
 .hcard:hover{border-color:rgba(224,32,32,.3);transform:translateY(-4px);box-shadow:0 8px 30px rgba(224,32,32,.1)}
 .hcard:hover::before{transform:scaleX(1)}
-.hcard:nth-child(2){margin-top:1.8rem}
-.hcard:nth-child(4){margin-top:-1.8rem}
+.hcard:nth-child(odd){margin-top:0}
+.hcard:nth-child(even){margin-top:0}
 .hcard-icon{font-size:1.5rem;margin-bottom:.6rem}
 .hcard-val{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--red);line-height:1}
 .hcard-desc{font-size:.75rem;color:var(--gray2);margin-top:.25rem;line-height:1.4}
